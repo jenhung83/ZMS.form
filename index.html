@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZHEN MAKES SNACKS</title>
+    <link rel="icon" href="./img/chocolate-bar_1f36b.png" type="image/png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <img src="./img/吉祥物們.png" alt="可愛的吉祥物插圖可惜你看不到">
+    <form>
+        <h1>ZHEN MAKES SNACKS</h1><br>
+        <article>
+            <h2>🍫巧克力滿意度＆意見回饋🍫</h2>
+           <!-- 我想要在中間靠左以下文字  革命尚未成功＠＠ -->
+            <p>歡迎您！請填寫表單，幫助ZHEN MAKES SNACKS更好！</p>
+            <p>購買巧克力禮盒者，<b>完成表單可於下次出單時參與抽獎</b>，有機會抽中4入或6入巧克力禮盒。</p>
+            <p>故聯絡人資訊請務必填寫清楚哦！</p>
+        </article>
+        <br><br><br>
+        <hr>
+        <ol>
+            <li id="qGender">
+                <div>
+                    <h3>請問您的性別是：</h3>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">我是男性</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">我是女性</label>
+                    <input type="radio" id="neuter" name="gender">
+                    <label for="neuter">多元性別</label>
+                </div>
+            </li>
+
+            <li id="qAge">
+                <div>
+                    <h3>請問您的年齡區間：</h3>
+                    <input type="radio" id="age19" name="age">
+                    <label for="age19">19歲(含)以下</label><br>
+                    <input type="radio" id="age29" name="age">
+                    <label for="age29">20~29歲</label><br>
+                    <input type="radio" id="age39" name="age">
+                    <label for="age39">30~39歲</label><br>
+                    <input type="radio" id="age49" name="age">
+                    <label for="age49">40~49歲</label><br>
+                    <input type="radio" id="age59" name="age">
+                    <label for="age59">50~59歲</label><br>
+                    <input type="radio" id="age69" name="age">
+                    <label for="age69">60~69歲</label><br>
+                    <input type="radio" id="age70" name="age">
+                    <label for="age70">70歲(含)以上</label><br>
+                </div>
+            </li>
+            <li id="qDate">
+                <div>
+                    <h3>您是哪天購買商品的呢？</h3>
+                    <p>若客倌購買過兩次以上，請填寫最近一次的下單日</p>
+                    <input type="date" name="" id="">
+                </div>
+            </li>
+            <li id="qKnowZMS">
+                <div>
+                    <h3>您是在哪得知ZHEN MAKES SNACKS?</h3>
+                    <span class="multiChoices"><p>複選</p></span>
+                    <input type="checkbox" id="fromFF" name="knowZMS">
+                    <label for="fromFF">親朋好友介紹</label><br>
+                    <input type="checkbox" id="fromGift" name="knowZMS">
+                    <label for="fromGift">來自他人的禮物</label><br>
+                    <input type="checkbox" id="fromIG" name="knowZMS">
+                    <label for="fromIG">Instagram</label><br>
+                    <input type="checkbox" id="fromFair" name="knowZMS">
+                    <label for="fromFair">在市集上認識</label><br>
+                    <input type="checkbox" id="fromOther" name="knowZMS">
+                    <label for="fromOther">其他管道</label><input type="text" size="40" class="fromOtherText" required placeholder="我就是神通廣大啊">
+                </div>
+            </li>
+            <!-- <li id="qIntention">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!custom checkbox好麻煩！！！！！！！！！！！！！！！！！
+                <h3>此次選購巧克力的目的：</h3>
+                <span class="multiChoices"><p>複選</p></span>
+                <label for="forMyself" class="container2">自己享用
+                    <input type="checkbox" id="forMyself" name="knowUs" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label for="forSomeone" class="container2">當禮物送人
+                    <input type="checkbox" id="forSomeone" name="knowUs" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+                
+                <label for="forOther" class="container2">其他
+                    <input type="checkbox" id="forOther" name="knowUs" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <input type="text" class="fromOtherText" required placeholder="來自粉絲的熱情支持">
+            </li> -->
+            <li>
+                <div>
+                    <h3>此次選購巧克力的目的：</h3>
+                    <span class="multiChoices"><p>複選</p></span>
+                    <input type="checkbox" id="forMyself" name="knowUs">
+                    <label for="forMyself">自己享用</label><br>
+                    <input type="checkbox" id="forSomeone" name="knowUs">
+                    <label for="forSomeone">當禮物送人</label><br>
+                    <input type="checkbox" id="forOther" name="knowUs">
+                    <label for="forOther">其他</label>
+                    <input type="text" size="40" class="fromOtherText" required placeholder="0o.唯iZHEN一人.o0"> 
+                </div>
+            </li>
+            <li id="qReason">
+                <div>
+                    <h3>吸引您選購巧克力的原因為何？</h3>
+                    <span class="multiChoices"><p>複選</p></span>
+                    <input type="checkbox" id="preference" name="knowUs">
+                    <label for="preference">本身喜歡巧克力</label><br>
+                    <input type="checkbox" id="appearance" name="knowUs">
+                    <label for="appearance">包裝盒外觀好看</label><br>
+                    <input type="checkbox" id="price" name="knowUs">
+                    <label for="price">價格合理，送禮自用兩相宜</label><br>
+                    <input type="checkbox" id="lottery" name="knowUs">
+                    <label for="lottery">注意到抽獎活動！想參加！</label><br>
+                    <input type="checkbox" id="otherProduct" name="knowUs">
+                    <label for="otherProduct">其實...我是被其他商品吸引過來的(EX:可麗露、餅乾...)</label><br>
+                    <input type="checkbox" id="otherReason" name="knowUs">
+                    <label for="otherReason">其他原因</label><input type="text" size="40" class="fromOtherText" required placeholder="吸引我的不是巧克力，是你"><br>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <h3>此次購買數量</h3>
+                    <input type="radio" id="single" name="qty">
+                        <label for="single">單顆</label>
+                        <input type="radio" id="four" name="qty">
+                        <label for="four">4入禮盒</label>
+                        <input type="radio" id="six" name="qty">
+                        <label for="six">6入禮盒</label>
+                        <input type="radio" id="twelve" name="qty">
+                        <label for="twelve">12入禮盒</label>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>此次選購口味</h3>
+                </div> 
+                <div class="container">
+                    <table class="flavor">
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="MC60" name="chocoFlavor">
+                                <label for="MC60">60%牛奶巧克力<br>60% MILK CHOCOLATE</label><br>
+                                <img id="MC60" src="./img/實心 牛奶.png" alt="60%牛奶巧克力">
+                            </td>
+                            <td>
+                                <input type="checkbox" id="COINTREAU" name="chocoFlavor">
+                                <label for="COINTREAU">君度橙香<br>COINTREAU</label><br>
+                                <img id="COINTREAU" src="./img/君度.png" alt="君度橙香">
+                            </td>
+                            <td>
+                                <input type="checkbox" id="STRAWBERRY" name="chocoFlavor">
+                                <label for="STRAWBERRY">草莓果醬<br>STRAWBERRY JAM</label><br>
+                                <img id="STRAWBERRY" src="./img/草莓.png" alt="草莓果醬">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="EARL" name="chocoFlavor">
+                                <label for="EARL">伯爵紅茶<br>EARL BLACK TEA</label><br>
+                                <img id="EARL" src="./img/紅茶.png" alt="伯爵紅茶">
+                            </td>
+                            <td>
+                                <input type="checkbox" id="WC29" name="chocoFlavor">
+                                <label for="WC29">29%純白巧克力<br>29%WHITE CHOCOLATE</label><br>
+                                <img id="WC29" src="./img/白巧.png" alt="29%純白巧克力">
+                            </td>
+                            <td>
+                                <input type="checkbox" id="DARK80" name="chocoFlavor">
+                                <label for="DARK80">80%黑巧克力<br>80%DARK CHOCOLATE</label><br>
+                                <img id="DARK80" src="./img/80黑.png" alt="80%黑巧克力">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="matcha" name="chocoFlavor">
+                                <label for="matcha">靜岡抹茶<br>NANAYA MATCHA</label><br>
+                                <img id="matcha" src="./img/抹茶.png" alt="靜岡抹茶">
+                            </td>
+                            <td>
+                                <input type="checkbox" id="heavyMilk" name="chocoFlavor">
+                                <label for="heavyMilk">濃味奶香<br>HEAVY MILK</label><br>
+                                <img id="heavyMilk" src="./img/牛奶.png" alt="2濃味奶香">
+                            </td>
+                            <td>
+                                <input type="checkbox" id="BRANDY" name="chocoFlavor">
+                                <label for="BRANDY">酒香白蘭地<br>BRANDY</label><br>
+                                <img id="BRANDY" src="./img/白蘭地.png" alt="酒香白蘭地">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="VANILLA" name="chocoFlavor">
+                                <label for="VANILLA">清甜香草<br>NATURAL VANILLA</label><br>
+                                <img id="VANILLA" src="./img/香草.png" alt="清甜香草">
+                            </td>
+                            <td>
+                                <input type="checkbox" id="OOLONG" name="chocoFlavor">
+                                <label for="OOLONG">凍頂烏龍茶<br>TUNTING OOLONG TEA</label><br>
+                                <img id="OOLONG" src="./img/烏龍茶.png" alt="凍頂烏龍茶">
+                            </td>
+                            <td>
+                                <input type="checkbox" id="SPECIAL" name="chocoFlavor">
+                                <label for="SPECIAL">特別限定<br>SPECIAL EDITION</label><br>
+                                <img id="SPECIAL" src="./img/特別.png" alt="特別限定">
+                            </td>
+                        </tr>
+                    </table>   
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label for="topThree">
+                        <h3>承上題，您最喜歡哪些口味？</h3>
+                    </label>
+                    <textarea name="" id="topThree" cols="50" rows="10"></textarea>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label for="yourMesg">
+                        <h3>除了以上12種口味，您還希望品嚐到什麼口味呢？</h3>
+                    </label>
+                    <textarea name="" id="yourMesg" cols="50" rows="10" placeholder="例如：海鹽焦糖"></textarea>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>目前外層巧克力殼為75%坦尚尼亞巧克力，這樣的苦甜程度是否適中？</h3>
+                    <input type="radio" id="swt" name="chocoshell">
+                    <label for="swt">可以再甜一點</label>
+                    <input type="radio" id="perfect" name="chocoshell">
+                    <label for="perfect">覺得目前剛剛好</label>
+                    <input type="radio" id="bitter" name="chocoshell">
+                    <label for="bitter">可以再苦一點</label>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>
+                        <h3>巧克力美味度</h3>
+                        <label>很還好...</label><input type="range" min="0" max="100" value="100" step="20"><label>非常讚!!</label>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>
+                        <h3>巧克力口味是否夠多樣？</h3>
+                        <label>太少了吧</label><input type="range" min="0" max="100" value="100" step="20"><label>超多選擇</label>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>
+                        <h3>包裝盒外觀</h3>
+                        <label>馬馬虎虎</label><input type="range" min="0" max="100" value="100" step="20"><label>好有質感喔</label>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>
+                        <h3>MENU清晰度</h3>
+                        <label>看不懂啦</label><input type="range" min="0" max="100" value="100" step="20"><label>一目瞭然</label>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>
+                        <h3>價格接受度</h3>
+                        <label>毋通太貴了</label><input type="range" min="0" max="100" value="100" step="20"><label>親民好入手</label>
+                    </label>
+                </li>
+                </div>
+            <li>
+                <div>
+                    <label>
+                        <h3>服務人員介紹是否清楚</h3>
+                        <label>一頭霧水</label><input type="range" min="0" max="100" value="100" step="20"><label>專業詳細</label>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>其他建議分享：</h3>
+                    <textarea cols="50" rows="10"placeholder="感謝您給予任何回饋！"></textarea>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>您是否有參與抽獎活動的意願？</h3>
+                    <input type="radio" id="yes" name="lottery">
+                    <label for="yes">我想參加！</label><br>
+                    <input type="radio" id="no" name="lottery">
+                    <label for="no">不了，謝謝。</label>
+                </li>
+                </div>
+            <li>
+                <div>
+                    <h3>請留下欲參與抽獎活動的聯絡人資訊</h3>
+                    <details>
+                        <summary>請注意，中獎者需自付170元黑貓冷藏運費哦！</summary>
+                        <p>請依序填寫 姓名/手機/收件地址。(此題未填寫則自動放棄參與抽獎活動)</p>
+                    </details><br>
+                    <label for="yourName">這位客倌大名：</label>
+                    <input type="text" id="yourName"><br>
+                    <label for="yourTel">手機號碼：</label>
+                    <input type="tel" id="yourTel" placeholder="0912-345-678" pattern="[09]{2}[0-9]{2}-[0-9]{3}-[0-9]{3}"><br>
+                    <label for="yourAddress">收件地址：</label>
+                    <select name="yourAddress" id="yourAddress">
+                        <optgroup label="北部地區">
+                            <option value="">臺北市</option>
+                            <option value="">新北市</option>
+                            <option value="">基隆市</option>
+                            <option value="">桃園市</option>
+                            <option value="">新竹市</option>
+                            <option value="">新竹縣</option>
+                            <option value="">苗栗縣</option>
+                        </optgroup>
+                        <optgroup label="中部地區">
+                            <option value="">臺中市</option>
+                            <option value="">彰化縣</option>
+                            <option value="">南投縣</option>
+                        </optgroup>
+                        <optgroup label="南部地區">
+                            <option value="">雲林縣</option>
+                            <option value="">嘉義市</option>
+                            <option value="">嘉義縣</option>
+                            <option value="">臺南市</option>
+                            <option value="">高雄市</option>
+                            <option value="">屏東縣</option>
+                        </optgroup>
+                        <optgroup label="東部地區">
+                            <option value="">宜蘭縣</option>
+                            <option value="">花蓮縣</option>
+                            <option value="">臺東縣</option>
+                        </optgroup>
+                        <optgroup label="離島地區">
+                            <option value="">澎湖縣</option>
+                            <option value="">金門縣</option>
+                            <option value="">連江縣</option>
+                        </optgroup>
+                    </select>
+                    <input type="text" id="yourAddress"  size="40" placeholder="ooo區ooo路ooo號"><br><br><br>
+                </div>
+            </li>
+        </ol>
+    </form>
+
+    <button class=orderMenu>
+        <a target="_blank" href="https://drive.google.com/drive/folders/1--3WcPzUZQS7tToYrNX1hIgSB8eIsQQN?usp=sharing">👉點此看更多商品表單</a>
+    </button>
+    <button class=orderMenu>
+        <a target="_blank" href="https://www.instagram.com/zhenmakessnacks/">👉點此看Instagram</a>
+    </button>
+    <section>
+        <p>----- 謝謝您完成此問卷 -----</p>
+        <p>此表單僅供我們更優化我們的商品及服務，表單回答中的個資不會用做它途，敬請放心填寫！</p>
+        <p>ZHEN MAKES SNACKS保有最終的活動解釋權，特此告知，敬請諒解。</p>   
+    </section>
+    <br>
+    <!-- <input type="submit" value="按我送出！"> -->
+    <button class="submitBtn" onclick="showMsg()">按我送出！</button>
+    <script>
+        function showMsg(){
+            alert("突然好想要吃肉桂捲")
+        }
+    </script>
+
+</body>
+
+</html>

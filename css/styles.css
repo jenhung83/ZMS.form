@@ -1,0 +1,238 @@
+/* Custom Checkbox
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+:root {
+  --titleColor:rgb(204, 156, 41);
+  --secColor:rgb(228, 202, 144);
+  --darkColor:rgb(70, 67, 59);
+}
+body {
+  background: url(../img/backG.png)left repeat-y, url(../img/backGleft.png)right repeat-y;
+  background-size: 7%;
+  background-attachment: fixed;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  text-align: center;
+  line-height: 30px;
+  color: var(--darkColor);
+}
+
+body > img {
+  size: 40%;
+}
+
+h1 {
+  color: var(--titleColor);
+}
+
+hr{
+  border-style: solid none none none;
+  border-color: var(--secColor);
+  border-width: 1px;
+  width: 70%;
+}
+ol li div {
+  border-top: 3px dotted rgba(228, 201, 144, 0.281);
+  width: 50%;
+  margin: 15px auto;
+  padding-top: 8px;
+  text-align: left;
+}
+
+ol {
+  border-radius: 30px;
+  display: inline-block;
+  counter-reset: item;
+}
+
+ol li {
+  display: block;
+}
+
+ol li:before {
+  content: counter(item) ".";
+  counter-increment: item;
+  color: var(--titleColor);
+  font-size: 30px;
+}
+
+li {
+  text-align: center;
+  margin-top: 5rem;
+}
+/* ----------------------------table------------------------------- */
+
+div.container {
+  background-color: var(--secColor);
+  border: 3px dotted white;
+  width: 60%;
+  text-align: center;
+  /* margin:0 auto; */
+  padding: 40px;
+  box-shadow: 10px 10px 5px rgba(110, 90, 43, 0.185);
+}
+
+td {
+  vertical-align: top;
+  margin: 100px;
+  width: 400px;
+}
+
+td:hover {
+  background-color: white;
+  border-radius: 4%;
+}
+
+td:active {
+  background-color: rgb(250, 240, 218);
+}
+
+td > input {
+  display: block;
+}
+
+td > label {
+  display: inline-block;
+}
+td > img {
+  /* display: flex; */
+  width: 60%;
+  /* height: 110px; */
+  /* object-fit: contain; */
+  margin:auto 0;
+}
+/* ----------------------------table------------------------------- */
+textarea, select#yourAddress {
+  background-color: rgba(255, 249, 236, 0.568);
+  border: 1px solid var(--titleColor);
+  border-radius: 5px;
+}
+
+input[type="text"],[type="tel"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  margin-left: 4px;
+}
+
+span.multiChoices > p {
+  font-size: 80%;
+  background-color: rgba(255, 249, 236, 0.568);
+  border: 1px solid var(--titleColor);
+  border-radius: 30px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: var(--titleColor);
+  margin-top: -10px;
+}
+.orderMenu {
+  background-color: rgba(255, 249, 236, 0.568);
+  border: 1px solid var(--titleColor);
+  border-radius: 30px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.orderMenu>a {
+  text-decoration: none;
+  color: var(--titleColor);
+}
+.submitBtn {
+  font-size: 130%;
+  background-color: rgba(255, 249, 236, 0.568);
+  border: 1px solid var(--titleColor);
+  border-radius: 30px;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  /* line-height: 20px; */
+  color: var(--titleColor);
+}
+/* optgroup {!!!!!!!!!!!!!!!!!!it's not working!!!!!!!!!!!!!
+  background-color: gray;
+  color: red;
+}
+option {
+    background-color: white;
+    color: black;
+} */
+
+/* ------------------below pasted and revised from  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox ------------------------- */
+/* The container */
+/* .container2 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+/* 讓Safari不能點選 */
+/* 讓IE 10 and IE 11不能點選 */
+/* 讓Standard syntax不能點選 */
+
+/* Hide the browser's default checkbox */
+/* .container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+} */
+
+/* Create a custom checkbox */
+/* .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid rgb(252, 226, 156);
+  background-color: rgb(243, 243, 243);
+} */
+
+/* On mouse-over, add a grey background color */
+/* .container2:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+/* .container2 input:checked ~ .checkmark {
+  background-color: var(--titleColor);
+} */
+
+/* Create the checkmark/indicator (hidden when not checked) */
+/* .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+} */
+
+/* Show the checkmark when checked */
+/* .container2 input:checked ~ .checkmark:after {
+  display: block;
+} */
+
+/* Style the checkmark/indicator */
+/* .container2 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+
+
